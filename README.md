@@ -15,6 +15,9 @@ JavaScript developers often face the decision of choosing the most efficient ite
 1. **Data Source**: JSON data records were obtained from the DataUSA API (`https://datausa.io/api/searchLegacy/?limit=36523&dimension=Geography`).
 2. **Code Implementation**: The code uses the `axios` library to fetch data asynchronously and compares the execution time of the `forEach` loop and the traditional `for` loop by accessing a property (e.g., `name`) and logging it in console on each data record.
 
+![Code](/screenshots/code.png)
+
+
 ### Performance Metrics
 
 1. **Execution Time**: The primary metric for comparison, measuring the time taken by each loop type to process the entire dataset.
@@ -27,13 +30,14 @@ The experiments were conducted in a controlled environment, focusing on the perf
 
 - **forEach Loop**: The `forEach` loop demonstrated a certain execution time for processing the entire dataset.
   
-```forEach: 659.887939453125 ms```
+```forEach: 656.256103515625 ms```
 
 
 - **for Loop**: The traditional `for` loop showcased a comparable but slightly different execution time.
 
-```for loop: 603.544921875 ms```
+```for loop: 619.76611328125 ms```
 
+![Result](/screenshots/result.png)
 
 ### Analysis
 
