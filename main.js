@@ -3,8 +3,8 @@ import axios from 'axios';
 // Function to fetch JSON data from a hypothetical API
 async function fetchData() {
   try {
-    const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
-    return response.data;
+    const response = await axios.get('https://datausa.io/api/searchLegacy/?limit=36523&dimension=Geography');
+    return response.data.results;
   } catch (error) {
     console.error('Error fetching data:', error.message);
     return [];
@@ -34,7 +34,7 @@ async function main() {
   const jsonData = await fetchData();
 
   if (jsonData.length > 0) {
-    console.log('Performance comparison for 1000+ JSON data records:');
+    console.log('Performance comparison for 36k+ JSON data records:');
     comparePerformance(jsonData);
   } else {
     console.log('No data available for comparison.');

@@ -1,8 +1,8 @@
-# Case Study: Performance Comparison of forEach vs. for Loop in JavaScript Using JSONPlaceholder API
+# Case Study: Performance Comparison of forEach vs. for Loop in JavaScript Using DataUSA API
 
 ## Abstract
 
-In modern web development, optimizing code performance is crucial for delivering responsive and efficient applications. This case study aims to compare the performance of the `forEach` loop and the traditional `for` loop in JavaScript, using data obtained from the JSONPlaceholder API ([JSONPlaceholder API](https://jsonplaceholder.typicode.com/photos)). The study evaluates the execution time of each loop type while processing 1000+ JSON data records, providing valuable insights for developers seeking to make informed decisions regarding loop implementations.
+In modern web development, optimizing code performance is crucial for delivering responsive and efficient applications. This case study aims to compare the performance of the `forEach` loop and the traditional `for` loop in JavaScript, using data obtained from the DataUSA API ([DataUSA API](https://datausa.io/api/searchLegacy/?limit=36523&dimension=Geography)). The study evaluates the execution time of each loop type while processing 36k+ JSON data records, providing valuable insights for developers seeking to make informed decisions regarding loop implementations.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ JavaScript developers often face the decision of choosing the most efficient ite
 
 ### Experiment Setup
 
-1. **Data Source**: JSON data records were obtained from the JSONPlaceholder API (`https://jsonplaceholder.typicode.com/photos`).
+1. **Data Source**: JSON data records were obtained from the DataUSA API (`https://datausa.io/api/searchLegacy/?limit=36523&dimension=Geography`).
 2. **Code Implementation**: The code uses the `axios` library to fetch data asynchronously and compares the execution time of the `forEach` loop and the traditional `for` loop by accessing a property (e.g., `title`) on each data record.
 
 ### Performance Metrics
@@ -21,18 +21,18 @@ JavaScript developers often face the decision of choosing the most efficient ite
 
 ## Results and Analysis
 
-The experiments were conducted in a controlled environment, focusing on the performance of the `forEach` loop and the traditional `for` loop when processing 1000+ JSON data records from the JSONPlaceholder API.
+The experiments were conducted in a controlled environment, focusing on the performance of the `forEach` loop and the traditional `for` loop when processing 36k+ JSON data records from the DataUSA API.
 
 ### Execution Time
 
 - **forEach Loop**: The `forEach` loop demonstrated a certain execution time for processing the entire dataset.
   
-```forEach: 0.02587890625ms```
+```forEach: 0.524169921875ms```
 
 
 - **for Loop**: The traditional `for` loop showcased a comparable but slightly different execution time.
 
-```for loop: 0.011962890625ms```
+```for loop: 0.343017578125ms```
 
 
 ### Analysis
