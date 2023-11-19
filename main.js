@@ -15,18 +15,22 @@ async function fetchData() {
 function comparePerformance(data) {
   // Using forEach
   console.time('forEach took');
+  console.groupCollapsed('forEach');
   data.forEach(item => {
     // Perform some operation on each item (e.g., access properties)
-    const title = item.title;
+    console.log(item.name);
   });
+  console.groupEnd();
   console.timeEnd('forEach took');
 
   // Using for loop
   console.time('for loop took');
+  console.groupCollapsed('for loop');
   for (let i = 0; i < data.length; i++) {
     // Perform some operation on each item (e.g., access properties)
-    const title = data[i].title;
+    console.log(data[i].name);
   }
+  console.groupEnd();
   console.timeEnd('for loop took');
 }
 

@@ -27,12 +27,12 @@ The experiments were conducted in a controlled environment, focusing on the perf
 
 - **forEach Loop**: The `forEach` loop demonstrated a certain execution time for processing the entire dataset.
   
-```forEach: 0.524169921875ms```
+```forEach: 659.887939453125 ms```
 
 
 - **for Loop**: The traditional `for` loop showcased a comparable but slightly different execution time.
 
-```for loop: 0.343017578125ms```
+```for loop: 603.544921875 ms```
 
 
 ### Analysis
