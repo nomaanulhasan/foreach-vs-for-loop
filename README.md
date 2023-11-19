@@ -13,7 +13,7 @@ JavaScript developers often face the decision of choosing the most efficient ite
 ### Experiment Setup
 
 1. **Data Source**: JSON data records were obtained from the DataUSA API (`https://datausa.io/api/searchLegacy/?limit=36523&dimension=Geography`).
-2. **Code Implementation**: The code uses the `axios` library to fetch data asynchronously and compares the execution time of the `forEach` loop and the traditional `for` loop by accessing a property (e.g., `title`) on each data record.
+2. **Code Implementation**: The code uses the `axios` library to fetch data asynchronously and compares the execution time of the `forEach` loop and the traditional `for` loop by accessing a property (e.g., `name`) and logging it in console on each data record.
 
 ### Performance Metrics
 
